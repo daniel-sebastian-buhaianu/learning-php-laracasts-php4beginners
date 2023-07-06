@@ -14,9 +14,9 @@
         </button>
     </div>
     <div class="hidden lg:flex lg:gap-x-12">
-        <a href="<?= HOME_PAGE_HREF ?>" class="text-sm font-semibold leading-6 text-gray-900">Home</a>
-        <a href="<?= ABOUT_PAGE_HREF ?>" class="text-sm font-semibold leading-6 text-gray-900">About</a>
-        <a href="<?= CONTACT_PAGE_HREF ?>" class="text-sm font-semibold leading-6 text-gray-900">Contact</a>
+        <a href="<?= BASE_URL . '/' ?>" class="text-sm font-semibold leading-6 text-gray-900">Home</a>
+        <a href="<?= BASE_URL . '/about' ?>" class="text-sm font-semibold leading-6 text-gray-900">About</a>
+        <a href="<?= BASE_URL . '/contact' ?>" class="text-sm font-semibold leading-6 text-gray-900">Contact</a>
     </div>
     <div class="hidden lg:flex lg:flex-1 lg:justify-end">
         <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>

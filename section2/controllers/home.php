@@ -1,8 +1,6 @@
 <?php
 
-require __DIR__ . '/../config.php';
-
-$announcement = 'Announcement: Home';
+$announcement = 'Announcement: Home. ';
 $heroTitle = 'Home';
 $heroText = 'This is the home page.';
 $pageTitle = 'Home';
