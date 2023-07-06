@@ -2,18 +2,17 @@
 
 require 'init.php';
 
-$url = 'http://localhost' . $_SERVER['REQUEST_URI'];
-switch ($url)
+$uri = parse_url($_SERVER['REQUEST_URI'])['path'];
+$uri = 'http://localhost' . $uri;
+$route = str_replace(BASE_URL, '', $uri);
+
+$routes = [
+    '/' => 'controllers/home.php',
+    '/about' => 'controllers/about.php',
+    '/contact' => 'controllers/contact.php',
+];
+
+if (array_key_exists($route, $routes))
 {
-    case BASE_URL . '/':
-        require 'controllers/home.php';
-        break;
-    case BASE_URL . '/about';
-        require 'controllers/about.php';
-        break;
-    case BASE_URL . '/contact':
-        require 'controllers/contact.php';
-        break;
-    default:
-        require 'controllers/page-not-found.php';
+    require $routes[$route];
 }
