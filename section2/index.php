@@ -1,3 +1,5 @@
 <?php
-require 'config.php';
-require 'views/index.view.php';
+
+require 'init.php';
+
+require __DIR__ . '/controllers/home.php';
