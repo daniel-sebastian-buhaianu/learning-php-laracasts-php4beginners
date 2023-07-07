@@ -1,8 +1,6 @@
 <?php
 
-$announcement = 'Announcement: Contact. ';
-$heroTitle = 'Contact';
-$heroText = 'This is the contact page.';
 $pageTitle = 'Contact';
+$mainContent = require __DIR__ . '/../views/contact.view.php';
 
 require __DIR__ . '/../views/layout.view.php';

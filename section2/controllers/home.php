@@ -1,8 +1,6 @@
 <?php
 
-$announcement = 'Announcement: Home. ';
-$heroTitle = 'Home';
-$heroText = 'This is the home page.';
 $pageTitle = 'Home';
+$mainContent = require __DIR__ . '/../views/home.view.php';
 
 require __DIR__ . '/../views/layout.view.php';

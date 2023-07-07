@@ -1,10 +1,7 @@
 <?php
 
 $uri = getUri();
-$routes = [
-    '/' => 'controllers/home.php',
-    '/about' => 'controllers/about.php',
-    '/contact' => 'controllers/contact.php',
-];
+
+$routes = require 'routes.php';
 
 routeToController($uri, $routes);
