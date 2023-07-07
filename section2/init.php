@@ -1,4 +1,5 @@
 <?php
 
 require 'config.php';
-require 'helpers.php';
+require 'functions.php';
+require 'router.php';
