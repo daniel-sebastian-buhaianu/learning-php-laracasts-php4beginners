@@ -1,5 +1,12 @@
 <?php
 
+function getView(string $viewName, array $vars): string|false
+{
+    ob_start();
+    include 'views/' . $viewName . '.view.php';
+    return ob_get_clean();
+}
+
 function urlIs($value)
 {
     return getUri() === $value;
